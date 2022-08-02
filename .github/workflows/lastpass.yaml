@@ -1,0 +1,16 @@
+resources:
+- name: web-app
+  type: git
+  source:
+    uri: git@github.com/pivotal-cf/web-app.git
+jobs:
+- name: job-deploy-app
+  plan:
+  - get: web-app
+  - put: web-app-staging
+    params:
+      manifest: web-app/manifest.yml
+      environment_variables:
+        PRIVATE_KEY: ((web-app-staging-private-key/Notes))
+        SERVICE_URL: ((web-app-staging/Notes/service-url))
+        SERVICE_TOKEN: ((web-app-staging/Notes/service-token))
