@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+      #with:
+       # host: ${{ secrets.HOST }}
+        #username: ${{ secrets.USERNAME }}
+        #password: ${{ secrets.PASSWORD }}
+        #port: ${{ secrets.PORT }}
         
