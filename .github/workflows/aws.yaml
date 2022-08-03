@@ -1,6 +1,6 @@
 steps:
  - name: Store ENV from AWS SecretManager
-   uses:ZafarIqbal777/node-hello
+    uses: ZafarIqbal777/node-hello
    with:
      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
