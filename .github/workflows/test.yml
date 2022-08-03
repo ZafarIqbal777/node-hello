@@ -8,6 +8,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-      - name: Test
-        uses: Zafariqbal777/python-test-action@master
+
       
